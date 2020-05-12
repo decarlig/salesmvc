@@ -1,0 +1,72 @@
+﻿@model SalesWebvc.Models.Denuncia
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Denuncia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Logradouro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Logradouro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Complemento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Complemento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Municipio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Municipio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Zona)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Zona)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Aream3)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Aream3)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Responsavel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Responsavel)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
