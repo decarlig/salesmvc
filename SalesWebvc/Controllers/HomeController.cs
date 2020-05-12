@@ -17,9 +17,11 @@ namespace SalesWebvc.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            ViewData["Message"] = "Essa é a página de acesso ao Sistema Zer@ Dengue";
+            ViewData["email"] = "nelio@gmail.com";
+            
             return View();
+
         }
 
         public IActionResult Contact()
